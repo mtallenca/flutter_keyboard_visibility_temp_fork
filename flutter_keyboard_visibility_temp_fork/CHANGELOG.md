@@ -1,3 +1,9 @@
+## [0.1.7] - September 4, 2026
+
+- Updates the federated platform dependencies to `flutter_keyboard_visibility_platform_interface` 3.0.0 and `flutter_keyboard_visibility_linux`, `flutter_keyboard_visibility_macos`, `flutter_keyboard_visibility_windows` 2.0.0.
+- Raises the minimum supported versions to Dart 3.11 and Flutter 3.41 to match them.
+- Uses `flutter.compileSdkVersion` on Android instead of pinning `compileSdkVersion 34` ([#9](https://github.com/EchoEllet/flutter_keyboard_visibility_temp_fork/pull/9)).
+
 ## [0.1.6] - February 20, 2025
 
 - Fixes WASM compilation issue when using [`flutter_keyboard_visibility`](https://pub.dev/packages/flutter_keyboard_visibility) with this package by removing the deprecated class `FlutterKeyboardVisibilityPluginWeb` which is not expected to be used by clients.
