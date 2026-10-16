@@ -1,3 +1,8 @@
+## [0.1.8] - October 16, 2026
+
+- iOS: no longer reports the keyboard as visible when a rotation posts `keyboardWillShow`/`keyboardDidShow` for a keyboard that isn't on screen (a zero-height frame at the bottom edge, seen on a foldable's inner display). Nothing hides a keyboard that never appeared, so the state used to stay stuck at visible.
+- iOS: measures keyboard frames against the screen the notification belongs to instead of `UIScreen.main`, which is a different display on a device with two screens.
+
 ## [0.1.7] - September 4, 2026
 
 - Updates the federated platform dependencies to `flutter_keyboard_visibility_platform_interface` 3.0.0 and `flutter_keyboard_visibility_linux`, `flutter_keyboard_visibility_macos`, `flutter_keyboard_visibility_windows` 2.0.0.
